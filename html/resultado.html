@@ -9,10 +9,29 @@
 </head>
 <body>
     <div class="container">
-        <div id="resultado" class="flex-center flex-column">
-            <h1 id="resultadoFinal"></h1>
+        <div id="end" class="flex-center flex-column">
+          <h1 id="finalScore"></h1>
+            <form>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="usuario"
+                />
+                <button
+                  type="submit"
+                  class="btn"
+                  id="saveScoreBtn"
+                  onclick="saveHighScore(event)"
+                  disabled
+                >
+                  GUARDAR
+                </button>
+              </form>
+            <a href="../index.html" class="btn">JUEGA OTRA VEZ</a>
         </div>
     </div>
+    
     <script src="../javascript/resultado.js"></script>
 </body>
 </html>
